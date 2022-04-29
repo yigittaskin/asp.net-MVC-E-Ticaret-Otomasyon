@@ -27,5 +27,3 @@
 + Bootstrap Yapısı 
 
 konularında tecrübe edindim ve kendimi geliştirdim.
-
-Bu projeyi beraber geliştirdiğim ekip arkadaşım Ebru'ya teşekkür ediyorum.

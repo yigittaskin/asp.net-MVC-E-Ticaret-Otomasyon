@@ -32,7 +32,6 @@ Proje Görselleri:
 
 ![Kouzon](https://github.com/yigittaskin/asp.net-MVC-E-Ticaret-Otomasyon/blob/main/Web%20UI.jpeg)
 ![Kouzon](https://github.com/yigittaskin/asp.net-MVC-E-Ticaret-Otomasyon/blob/main/Web%20UI%20Other.jpeg)
-![Kouzon](https://www.hizliresim.com/gsv1atd)
 
 
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://www.instagram.com/taskinygt/) 

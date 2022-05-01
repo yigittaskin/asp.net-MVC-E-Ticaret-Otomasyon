@@ -30,8 +30,8 @@ konularında tecrübe edindim ve kendimi geliştirdim.
 
 Proje Görselleri:
 
-![Kouzon](https://www.hizliresim.com/56irwq0)
-![Kouzon](https://www.hizliresim.com/propjo4)
+![Kouzon](https://github.com/yigittaskin/asp.net-MVC-E-Ticaret-Otomasyon/blob/main/Web%20UI.jpeg)
+![Kouzon](https://github.com/yigittaskin/asp.net-MVC-E-Ticaret-Otomasyon/blob/main/Web%20UI%20Other.jpeg)
 ![Kouzon](https://www.hizliresim.com/gsv1atd)
 
 

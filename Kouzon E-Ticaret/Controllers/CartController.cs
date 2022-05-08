@@ -54,7 +54,7 @@ namespace Kouzon_E_Ticaret.Controllers
             return PartialView(GetCart());
         }
 
-        
+        [Authorize]
         public ActionResult Checkout(ShippingDetails entity)
         {
             var cart = GetCart();
@@ -78,6 +78,7 @@ namespace Kouzon_E_Ticaret.Controllers
 
         }
 
+
         private void SaveOrder(Cart cart, ShippingDetails entity)
         {
             var Order = new Order();
@@ -86,7 +87,7 @@ namespace Kouzon_E_Ticaret.Controllers
             Order.Total = cart.Total();
             Order.OrderDate = DateTime.Now;
             Order.OrderState = EnumOrderState.Waiting;
-            Order.FullName = User.Identity.Name;
+            Order.FullName = entity.FullName;
           
             Order.AdresBasligi = entity.AdresBasligi;
             Order.Adres = entity.Adres;
@@ -96,12 +97,12 @@ namespace Kouzon_E_Ticaret.Controllers
             Order.PostaKodu = entity.PostaKodu;
 
             Order.OrderLines = new List<OrderLine>();
-            foreach (var pr in Order.OrderLines)
+            foreach (var pr in cart.CartLines)
             {
                 var orderLine = new OrderLine();
                 orderLine.Quantity = pr.Quantity;
-                orderLine.Price =pr.Quantity * pr.Price;
-                orderLine.ProductId = pr.ProductId;
+                orderLine.Price =pr.Quantity * pr.Product.Price;
+                orderLine.ProductId = pr.Product.Id;
 
                 Order.OrderLines.Add(orderLine);
             }

@@ -29,6 +29,7 @@ namespace Kouzon_E_Ticaret.Controllers
             return View(orders);
         }
 
+        [Authorize]
         public ActionResult Details(int id)
         {
             var entity = db.Orders.Where(i => i.Id == id)

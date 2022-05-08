@@ -11,13 +11,13 @@
         @if (Model.Count() == 0)
         {
             <div class="col-md-12 mt-5">
-                <div class="alert alert-warning">i) Bu kategoriye ait ürün bulunamadı...</div>
+                <div class="alert alert-warning"><i class="fa-solid fa-circle-info"></i> Bu kategoriye ait ürün bulunamadı...</div>
             </div>
         }
         else
         {
             <div class="col-md-12 mt-5">
-                <div class="alert alert-info">i) <strong>@Model.Count()</strong> adet ürün bulundu.</div>
+                <div class="alert alert-info"><i class="fa-solid fa-circle-info"></i> <strong>@Model.Count()</strong> adet ürün bulundu.</div>
             </div>
         }
 
